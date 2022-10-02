@@ -1,0 +1,275 @@
+
+body{
+    font-family: "Roboto","Arial",sans-serif;
+    background-color: #fff;
+    overflow-x: hidden;
+
+}
+
+.menu{
+    display: inline-block;
+    height: inherit;
+    
+}
+.material-symbols-outlined{
+    height: 24px;
+    flex-shrink: 0;
+    
+}
+.last-nav{
+    text-decoration: none;
+    color: black;
+}
+.last-nav:hover{
+    color: black;
+}
+
+.sidebar{
+    position: fixed;
+    width: 16vw;
+    height: 100%;
+    left: 0;
+    top: 50px;
+    background-color: #fff;
+    overflow-y: auto;
+    margin-top: 5vh;
+
+}
+
+hr{
+    background-color: #464646;
+    height: 1px;
+    border: none;
+}
+.menu-bars{
+    margin-left: 0rem;
+    font-size: 2rem;
+    color: black;
+}
+
+#nav-menu.active{
+    width: 250px;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    left:-100%;
+    transition: 0.5s all;
+    overflow-y: auto;
+    
+}
+#nav-menu{
+    left:0;
+    transition: 0.5s all;
+    
+
+}
+.nav-text{
+    display: flex;
+    justify-content: start;
+    list-style: none;
+    height: 50px;
+    padding: 1rem;
+    font-family: "Roboto","Arial",sans-serif;
+
+}
+.nav-text a{
+    text-decoration: none;
+    color: black;
+    font-size: 1.2rem;
+
+
+}
+.nav-text:hover{
+    background-color: #dbdbdb;
+    cursor: pointer;
+}
+.nav-menu-items{
+    width: 100%;
+}
+ul{
+    padding-left: 0;
+}
+.material-symbols-outlined{
+    padding-right: 0rem;
+}
+.nav-section{
+    /* height: 200px; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.menu-icon{
+    margin-top: 1rem;
+    margin-left: -3rem;
+    /* visibility: hidden; */
+
+}
+#menu-icon1{
+    margin-top: 0rem;
+    margin-left: -25px;
+    color: black;
+    margin-right: -20px;
+
+}
+.nav-text-heading{
+    font-weight: 400;
+    color: grey;
+    font-family: "Roboto","Arial",sans-serif;
+    margin: 0;
+    padding: 0rem 0rem 0 1rem;
+}
+p a{
+    text-decoration: none;
+    color: #464646;
+    font-size: smaller;
+    font-weight: 600;
+    display: inline;
+
+}
+p a:hover{
+    color: #464646;
+}
+.llc{
+    color: #464646;
+    font-size: smaller;
+    font-weight: lighter;
+}
+.about-links{
+    padding: 2rem 2rem 5rem 2rem;
+
+}
+
+.chip-container{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 10px 15px;
+    position: sticky;
+    top: 59px;
+    z-index: 99;
+    margin-left: 17vw;
+    transition: 1s all;
+
+
+}
+.chip-container-clicked{
+    background-color: #fff;
+    border-top: 1px solid rgba(0,0,0,0.05);
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    padding: 10px 15px;
+    position: sticky;
+    top: 59px;
+    z-index: 99;
+    margin-left: 0;
+    transition: 1s all;
+
+
+}
+.chip{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color:rgba(0,0,0,0.05) ;
+    border: 1px solid rgba(0,0,0,0.01);
+    white-space: nowrap;
+    margin-right: 5px;
+    border-radius: 25px;
+}
+.chip.active{
+    background-color: black;
+    color: #fff;
+
+}
+.slick{
+    /* display: inline-flex; */
+    align-items: center;
+    justify-items:center;
+    vertical-align: middle;
+} 
+.page-content{
+    margin-left: 17vw;
+    transition: 0.5s all;
+    
+}
+
+.page-content-clicked{
+    margin-left: 0;
+    transition: 0.5s all;
+
+}
+.card-video{
+    display: block;
+}
+
+.navigation-bar{
+    position: fixed;
+    width: 100%;
+    z-index: 99;
+
+}
+button{
+    background-color: #fff;
+    border: none;
+}
+
+.card-video{
+    animation: scaledown .4s linear;
+    animation-fill-mode: forwards;
+}
+.card-video:hover{
+    z-index: 100;
+    animation: scale 0.4s linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes scale{
+    0%{
+        -webkit-transform: scale(1);
+        transform: scale(1);
+    }
+    100%{
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+}
+.row{
+    margin-top: 85px;
+    width: 100%;
+}
+
+
+
+
+@media (max-width: 1370px) {
+    span[id^="nav-icon-text"] {
+      margin-left: -251px;
+    }
+    #sidebar-id{
+        width: 90px;
+    }
+    #btn{
+        margin-left: 100px;
+    }
+    #btn1{
+        margin-left: 100px;
+    }
+
+  }
+
+  a[id^="hidden-icon"]{
+    display: none;
+
+  }
+
+  @media (max-width: 768px){
+    #search-box{
+        display: none;
+    }
+    a[id^="hidden-icon"]{
+        display: block;
+
+    }
+  }
+
+
